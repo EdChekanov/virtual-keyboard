@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Backquote",
+    "type": "symbol",
+    "value": {
+      "en": "`",
+      "EN": "~",
+      "ru": "ё",
+      "RU": "Ё"
+    }
+  },
+  {
+    "name": "Digit1",
+    "type": "symbol",
+    "value": {
+      "en": "1",
+      "EN": "!",
+      "ru": "1",
+      "RU": "!"
+    }
+  },
+  {
+    "name": "Digit2",
+    "type": "symbol",
+    "value": {
+      "en": "2",
+      "EN": "@",
+      "ru": "2",
+      "RU": "\""
+    }
+  },
+  {
+    "name": "Digit3",
+    "type": "symbol",
+    "value": {
+      "en": "3",
+      "EN": "#",
+      "ru": "3",
+      "RU": "№"
+    }
+  },
+  {
+    "name": "Digit4",
+    "type": "symbol",
+    "value": {
+      "en": "4",
+      "EN": "$",
+      "ru": "4",
+      "RU": ";"
+    }
+  },
+  {
+    "name": "Digit5",
+    "type": "symbol",
+    "value": {
+      "en": "5",
+      "EN": "%",
+      "ru": "5",
+      "RU": "%"
+    }
+  },
+  {
+    "name": "Digit6",
+    "type": "symbol",
+    "value": {
+      "en": "6",
+      "EN": "^",
+      "ru": "6",
+      "RU": ":"
+    }
+  },
+  {
+    "name": "Digit7",
+    "type": "symbol",
+    "value": {
+      "en": "7",
+      "EN": "&",
+      "ru": "7",
+      "RU": "&"
+    }
+  },
+  {
+    "name": "Digit8",
+    "type": "symbol",
+    "value": {
+      "en": "8",
+      "EN": "*",
+      "ru": "8",
+      "RU": "*"
+    }
+  },
+  {
+    "name": "Digit9",
+    "type": "symbol",
+    "value": {
+      "en": "9",
+      "EN": "(",
+      "ru": "9",
+      "RU": "("
+    }
+  },
+  {
+    "name": "Digit0",
+    "type": "symbol",
+    "value": {
+      "en": "0",
+      "EN": ")",
+      "ru": "0",
+      "RU": ")"
+    }
+  },
+  {
+    "name": "Minus",
+    "type": "symbol",
+    "value": {
+      "en": "-",
+      "EN": "_",
+      "ru": "-",
+      "RU": "_"
+    }
+  },
+  {
+    "name": "Equal",
+    "type": "symbol",
+    "value": {
+      "en": "=",
+      "EN": "+",
+      "ru": "=",
+      "RU": "+"
+    }
+  },
+  {
+    "name": "Backspace",
+    "type": "control",
+    "value": null
+  },
+  {
+    "name": "Tab",
+    "type": "control",
+    "value": null
+  },
+  {
+    "name": "KeyQ",
+    "type": "symbol",
+    "value": {
+      "en": "q",
+      "EN": "Q",
+      "ru": "й",
+      "RU": "Й"
+    }
+  },
+  {
+    "name": "KeyW",
+    "type": "symbol",
+    "value": {
+      "en": "w",
+      "EN": "W",
+      "ru": "ц",
+      "RU": "Ц"
+    }
+  },
+  {
+    "name": "KeyE",
+    "type": "symbol",
+    "value": {
+      "en": "e",
+      "EN": "E",
+      "ru": "у",
+      "RU": "У"
+    }
+  },
+  {
+    "name": "KeyR",
+    "type": "symbol",
+    "value": {
+      "en": "r",
+      "EN": "R",
+      "ru": "к",
+      "RU": "К"
+    }
+  },
+  {
+    "name": "KeyT",
+    "type": "symbol",
+    "value": {
+      "en": "t",
+      "EN": "T",
+      "ru": "е",
+      "RU": "Е"
+    }
+  },
+  {
+    "name": "KeyY",
+    "type": "symbol",
+    "value": {
+      "en": "y",
+      "EN": "Y",
+      "ru": "н",
+      "RU": "Н"
+    }
+  },
+  {
+    "name": "KeyU",
+    "type": "symbol",
+    "value": {
+      "en": "u",
+      "EN": "U",
+      "ru": "г",
+      "RU": "Г"
+    }
+  },
+  {
+    "name": "KeyI",
+    "type": "symbol",
+    "value": {
+      "en": "i",
+      "EN": "I",
+      "ru": "ш",
+      "RU": "Ш"
+    }
+  },
+  {
+    "name": "KeyO",
+    "type": "symbol",
+    "value": {
+      "en": "o",
+      "EN": "O",
+      "ru": "щ",
+      "RU": "Щ"
+    }
+  },
+  {
+    "name": "KeyP",
+    "type": "symbol",
+    "value": {
+      "en": "p",
+      "EN": "P",
+      "ru": "з",
+      "RU": "З"
+    }
+  },
+  {
+    "name": "BracketLeft",
+    "type": "symbol",
+    "value": {
+      "en": "[",
+      "EN": "{",
+      "ru": "х",
+      "RU": "Х"
+    }
+  },
+  {
+    "name": "BracketRight",
+    "type": "symbol",
+    "value": {
+      "en": "]",
+      "EN": "}",
+      "ru": "ъ",
+      "RU": "Ъ"
+    }
+  },
+  {
+    "name": "Backslash",
+    "type": "symbol",
+    "value": {
+      "en": "\\",
+      "EN": "|",
+      "ru": "\\",
+      "RU": "/"
+    }
+  },
+  {
+    "name": "Delete",
+    "type": "control",
+    "value": null
+  },
+  {
+    "name": "CapsLock",
+    "type": "control",
+    "value": null
+  },
+  {
+    "name": "KeyA",
+    "type": "symbol",
+    "value": {
+      "en": "a",
+      "EN": "A",
+      "ru": "ф",
+      "RU": "Ф"
+    }
+  },
+  {
+    "name": "KeyS",
+    "type": "symbol",
+    "value": {
+      "en": "s",
+      "EN": "S",
+      "ru": "ы",
+      "RU": "Ы"
+    }
+  },
+  {
+    "name": "KeyD",
+    "type": "symbol",
+    "value": {
+      "en": "d",
+      "EN": "D",
+      "ru": "в",
+      "RU": "В"
+    }
+  },
+  {
+    "name": "KeyF",
+    "type": "symbol",
+    "value": {
+      "en": "f",
+      "EN": "F",
+      "ru": "а",
+      "RU": "А"
+    }
+  },
+  {
+    "name": "KeyG",
+    "type": "symbol",
+    "value": {
+      "en": "g",
+      "EN": "G",
+      "ru": "п",
+      "RU": "П"
+    }
+  },
+  {
+    "name": "KeyH",
+    "type": "symbol",
+    "value": {
+      "en": "h",
+      "EN": "H",
+      "ru": "р",
+      "RU": "Р"
+    }
+  },
+  {
+    "name": "KeyJ",
+    "type": "symbol",
+    "value": {
+      "en": "j",
+      "EN": "J",
+      "ru": "о",
+      "RU": "О"
+    }
+  },
+  {
+    "name": "KeyK",
+    "type": "symbol",
+    "value": {
+      "en": "k",
+      "EN": "K",
+      "ru": "л",
+      "RU": "Л"
+    }
+  },
+  {
+    "name": "KeyL",
+    "type": "symbol",
+    "value": {
+      "en": "l",
+      "EN": "L",
+      "ru": "д",
+      "RU": "Д"
+    }
+  },
+  {
+    "name": "Semicolon",
+    "type": "symbol",
+    "value": {
+      "en": ";",
+      "EN": ":",
+      "ru": "ж",
+      "RU": "Ж"
+    }
+  },
+  {
+    "name": "Quote",
+    "type": "symbol",
+    "value": {
+      "en": "'",
+      "EN": "\"",
+      "ru": "э",
+      "RU": "Э"
+    }
+  },
+  {
+    "name": "Enter",
+    "type": "control",
+    "value": null
+  },
+  {
+    "name": "ShiftLeft",
+    "type": "control",
+    "value": "Shift"
+  },
+  {
+    "name": "KeyZ",
+    "type": "symbol",
+    "value": {
+      "en": "z",
+      "EN": "Z",
+      "ru": "я",
+      "RU": "Я"
+    }
+  },
+  {
+    "name": "KeyX",
+    "type": "symbol",
+    "value": {
+      "en": "x",
+      "EN": "X",
+      "ru": "ч",
+      "RU": "Ч"
+    }
+  },
+  {
+    "name": "KeyC",
+    "type": "symbol",
+    "value": {
+      "en": "c",
+      "EN": "C",
+      "ru": "с",
+      "RU": "С"
+    }
+  },
+  {
+    "name": "KeyV",
+    "type": "symbol",
+    "value": {
+      "en": "v",
+      "EN": "V",
+      "ru": "м",
+      "RU": "М"
+    }
+  },
+  {
+    "name": "KeyB",
+    "type": "symbol",
+    "value": {
+      "en": "b",
+      "EN": "B",
+      "ru": "и",
+      "RU": "И"
+    }
+  },
+  {
+    "name": "KeyN",
+    "type": "symbol",
+    "value": {
+      "en": "n",
+      "EN": "N",
+      "ru": "т",
+      "RU": "Т"
+    }
+  },
+  {
+    "name": "KeyM",
+    "type": "symbol",
+    "value": {
+      "en": "m",
+      "EN": "M",
+      "ru": "ь",
+      "RU": "Ь"
+    }
+  },
+  {
+    "name": "Comma",
+    "type": "symbol",
+    "value": {
+      "en": ",",
+      "EN": "<",
+      "ru": "б",
+      "RU": "Б"
+    }
+  },
+  {
+    "name": "Period",
+    "type": "symbol",
+    "value": {
+      "en": ".",
+      "EN": ">",
+      "ru": "ю",
+      "RU": "Ю"
+    }
+  },
+  {
+    "name": "Slash",
+    "type": "symbol",
+    "value": {
+      "en": "/",
+      "EN": "?",
+      "ru": ".",
+      "RU": ","
+    }
+  },
+  {
+    "name": "ArrowUp",
+    "type": "control",
+    "value": "&uarr;"
+  },
+  {
+    "name": "ShiftRight",
+    "type": "control",
+    "value": "Shift"
+  },
+  {
+    "name": "ControlLeft",
+    "type": "control",
+    "value": "Ctrl"
+  },
+  {
+    "name": "MetaLeft",
+    "type": "control",
+    "value": "&#127750;"
+  },
+  {
+    "name": "AltLeft",
+    "type": "control",
+    "value": "Alt"
+  },
+  {
+    "name": "Space",
+    "type": "symbol",
+    "value": {
+      "en": " ",
+      "EN": " ",
+      "ru": " ",
+      "RU": " "
+    }
+  },
+  {
+    "name": "AltRight",
+    "type": "control",
+    "value": "Alt"
+  },
+  {
+    "name": "ArrowLeft",
+    "type": "control",
+    "value": "&larr;"
+  },
+  {
+    "name": "ArrowDown",
+    "type": "control",
+    "value": "&darr;"
+  },
+  {
+    "name": "ArrowRight",
+    "type": "control",
+    "value": "&rarr;"
+  },
+  {
+    "name": "ControlRight",
+    "type": "control",
+    "value": "Ctrl"
+  }
+]
