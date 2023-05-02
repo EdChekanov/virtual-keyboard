@@ -45,6 +45,7 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "normalize.scss": "^0.1.0"
   }
 }

@@ -1,7 +1,7 @@
 [
   {
     "name": "Backquote",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": "`",
       "EN": "~",
@@ -132,16 +132,16 @@
   {
     "name": "Backspace",
     "type": "control",
-    "value": null
+    "value": "Backspace"
   },
   {
     "name": "Tab",
     "type": "control",
-    "value": null
+    "value": "Tab"
   },
   {
     "name": "KeyQ",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "q",
       "EN": "Q",
@@ -151,7 +151,7 @@
   },
   {
     "name": "KeyW",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "w",
       "EN": "W",
@@ -161,7 +161,7 @@
   },
   {
     "name": "KeyE",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "e",
       "EN": "E",
@@ -171,7 +171,7 @@
   },
   {
     "name": "KeyR",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "r",
       "EN": "R",
@@ -181,7 +181,7 @@
   },
   {
     "name": "KeyT",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "t",
       "EN": "T",
@@ -191,7 +191,7 @@
   },
   {
     "name": "KeyY",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "y",
       "EN": "Y",
@@ -201,7 +201,7 @@
   },
   {
     "name": "KeyU",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "u",
       "EN": "U",
@@ -211,7 +211,7 @@
   },
   {
     "name": "KeyI",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "i",
       "EN": "I",
@@ -221,7 +221,7 @@
   },
   {
     "name": "KeyO",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "o",
       "EN": "O",
@@ -231,7 +231,7 @@
   },
   {
     "name": "KeyP",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "p",
       "EN": "P",
@@ -241,7 +241,7 @@
   },
   {
     "name": "BracketLeft",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": "[",
       "EN": "{",
@@ -251,7 +251,7 @@
   },
   {
     "name": "BracketRight",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": "]",
       "EN": "}",
@@ -272,16 +272,16 @@
   {
     "name": "Delete",
     "type": "control",
-    "value": null
+    "value": "Del"
   },
   {
     "name": "CapsLock",
     "type": "control",
-    "value": null
+    "value": "CapsLock"
   },
   {
     "name": "KeyA",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "a",
       "EN": "A",
@@ -291,7 +291,7 @@
   },
   {
     "name": "KeyS",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "s",
       "EN": "S",
@@ -301,7 +301,7 @@
   },
   {
     "name": "KeyD",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "d",
       "EN": "D",
@@ -311,7 +311,7 @@
   },
   {
     "name": "KeyF",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "f",
       "EN": "F",
@@ -321,7 +321,7 @@
   },
   {
     "name": "KeyG",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "g",
       "EN": "G",
@@ -331,7 +331,7 @@
   },
   {
     "name": "KeyH",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "h",
       "EN": "H",
@@ -341,7 +341,7 @@
   },
   {
     "name": "KeyJ",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "j",
       "EN": "J",
@@ -351,7 +351,7 @@
   },
   {
     "name": "KeyK",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "k",
       "EN": "K",
@@ -361,7 +361,7 @@
   },
   {
     "name": "KeyL",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "l",
       "EN": "L",
@@ -371,7 +371,7 @@
   },
   {
     "name": "Semicolon",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": ";",
       "EN": ":",
@@ -381,7 +381,7 @@
   },
   {
     "name": "Quote",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": "'",
       "EN": "\"",
@@ -392,7 +392,7 @@
   {
     "name": "Enter",
     "type": "control",
-    "value": null
+    "value": "Enter"
   },
   {
     "name": "ShiftLeft",
@@ -401,7 +401,7 @@
   },
   {
     "name": "KeyZ",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "z",
       "EN": "Z",
@@ -411,7 +411,7 @@
   },
   {
     "name": "KeyX",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "x",
       "EN": "X",
@@ -421,7 +421,7 @@
   },
   {
     "name": "KeyC",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "c",
       "EN": "C",
@@ -431,7 +431,7 @@
   },
   {
     "name": "KeyV",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "v",
       "EN": "V",
@@ -441,7 +441,7 @@
   },
   {
     "name": "KeyB",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "b",
       "EN": "B",
@@ -451,7 +451,7 @@
   },
   {
     "name": "KeyN",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "n",
       "EN": "N",
@@ -461,7 +461,7 @@
   },
   {
     "name": "KeyM",
-    "type": "symbol",
+    "type": "char",
     "value": {
       "en": "m",
       "EN": "M",
@@ -471,7 +471,7 @@
   },
   {
     "name": "Comma",
-    "type": "symbol",
+    "type": "ruchar",
     "value": {
       "en": ",",
       "EN": "<",
@@ -481,7 +481,7 @@
   },
   {
     "name": "Period",
-    "type": "symbol",
+    "type": "ruchar ",
     "value": {
       "en": ".",
       "EN": ">",
@@ -517,7 +517,7 @@
   {
     "name": "MetaLeft",
     "type": "control",
-    "value": "&#127750;"
+    "value": "&#8853;"
   },
   {
     "name": "AltLeft",
