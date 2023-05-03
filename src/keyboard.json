@@ -270,11 +270,6 @@
     }
   },
   {
-    "name": "Delete",
-    "type": "control",
-    "value": "Del"
-  },
-  {
     "name": "CapsLock",
     "type": "control",
     "value": "CapsLock"
