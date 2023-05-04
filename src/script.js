@@ -15,6 +15,8 @@ class Keyboard {
       Для переключения языка комбинация: левые ctrl + alt</p>`;
     this.isShiftOn = false;
     this.isCapsOn = false;
+    this.isCtrlOn = false;
+    this.isAltOn = false;
     this.isEnglishON = localStorage.getItem('isEnglish')
       ? localStorage.getItem('isEnglish')
       : true;
@@ -64,7 +66,9 @@ class Keyboard {
   }
 
   switchToBigRu() {
-    const data = this.data.filter((item) => (item.type === 'char') | 'ruchar');
+    const data = this.data.filter(
+      (item) => item.type === 'char' || item.type === 'ruchar'
+    );
     data.forEach((item) => {
       const div = this.keyboard.querySelector(`.${item.name}`);
       for (const el of div.children) {
@@ -75,7 +79,9 @@ class Keyboard {
   }
 
   switchToSmallRu() {
-    const data = this.data.filter((item) => (item.type === 'char') | 'ruchar');
+    const data = this.data.filter(
+      (item) => item.type === 'char' || item.type === 'ruchar'
+    );
     data.forEach((item) => {
       const div = this.keyboard.querySelector(`.${item.name}`);
       for (const el of div.children) {
@@ -83,6 +89,66 @@ class Keyboard {
         div.querySelector('.ru').classList.remove('hidden');
       }
     });
+  }
+
+  switchToBigEnSymbol() {
+    const data = this.data.filter(
+      (item) => item.type === 'symbol' || item.type === 'ruchar'
+    );
+    data.forEach((item) => {
+      const div = this.keyboard.querySelector(`.${item.name}`);
+      for (const el of div.children) {
+        if (!el.classList.contains('hidden')) el.classList.add('hidden');
+        div.querySelector('.EN').classList.remove('hidden');
+      }
+    });
+  }
+
+  switchToSmallEnSymbol() {
+    const data = this.data.filter(
+      (item) => item.type === 'symbol' || item.type === 'ruchar'
+    );
+    data.forEach((item) => {
+      const div = this.keyboard.querySelector(`.${item.name}`);
+      for (const el of div.children) {
+        if (!el.classList.contains('hidden')) el.classList.add('hidden');
+        div.querySelector('.en').classList.remove('hidden');
+      }
+    });
+  }
+
+  switchToBigRuSymbol() {
+    const data = this.data.filter((item) => item.type === 'symbol');
+    data.forEach((item) => {
+      const div = this.keyboard.querySelector(`.${item.name}`);
+      for (const el of div.children) {
+        if (!el.classList.contains('hidden')) el.classList.add('hidden');
+        div.querySelector('.RU').classList.remove('hidden');
+      }
+    });
+  }
+
+  switchToSmallRuSymbol() {
+    const data = this.data.filter((item) => item.type === 'symbol');
+    data.forEach((item) => {
+      const div = this.keyboard.querySelector(`.${item.name}`);
+      for (const el of div.children) {
+        if (!el.classList.contains('hidden')) el.classList.add('hidden');
+        div.querySelector('.ru').classList.remove('hidden');
+      }
+    });
+  }
+
+  changeLanguage() {
+    this.isEnglishON = !this.isEnglishON;
+    localStorage.setItem('isEnglish', this.isEnglishON);
+    if (this.isEnglishON) {
+      this.switchToSmallEn();
+      this.switchToSmallEnSymbol();
+    } else {
+      this.switchToSmallRu();
+      this.switchToSmallRuSymbol();
+    }
   }
 
   addEvents() {
@@ -95,29 +161,22 @@ class Keyboard {
       if (
         !(this.data.find((item) => item.name === e.code).type === 'control')
       ) {
-        if (this.isEnglishON) {
-          if (this.isShiftOn === this.isCapsOn) {
-            this.display.value += key.querySelector('.en').textContent;
-          } else {
-            this.display.value += key.querySelector('.EN').textContent;
-          }
-        } else {
-          if (this.isShiftOn === this.isCapsOn) {
-            this.display.value += key.querySelector('.ru').textContent;
-          } else {
-            this.display.value += key.querySelector('.RU').textContent;
-          }
-        }
+        const keySpan = Array.from(key.children).filter(
+          (el) => !el.classList.contains('hidden')
+        )[0];
+        this.display.value += keySpan.textContent;
       } else {
         if (this.data.find((item) => item.name === e.code).value === 'Shift') {
           this.isShiftOn = true;
           if (this.isEnglishON) {
+            this.switchToBigEnSymbol();
             if (!this.isCapsOn) {
               this.switchToBigEn();
             } else {
               this.switchToSmallEn();
             }
           } else {
+            this.switchToBigRuSymbol();
             if (!this.isCapsOn) {
               this.switchToBigRu();
             } else {
@@ -134,6 +193,15 @@ class Keyboard {
         if (this.data.find((item) => item.name === e.code).value === 'Tab') {
           this.display.value += '  ';
         }
+        if (this.data.find((item) => item.name === e.code).value === 'Enter') {
+          this.display.value += '\n';
+        }
+        if (this.data.find((item) => item.name === e.code).value === 'Ctrl') {
+          this.isCtrlOn = true;
+        }
+        if (this.data.find((item) => item.name === e.code).value === 'Alt') {
+          this.isAltOn = true;
+        }
       }
     });
     window.addEventListener('keyup', (e) => {
@@ -147,16 +215,48 @@ class Keyboard {
         if (this.data.find((item) => item.name === e.code).value === 'Shift') {
           this.isShiftOn = false;
           if (this.isEnglishON) {
+            this.switchToSmallEnSymbol();
             if (!this.isCapsOn) {
               this.switchToSmallEn();
             } else {
               this.switchToBigEn();
             }
           } else {
+            this.switchToSmallRuSymbol();
             if (!this.isCapsOn) {
               this.switchToSmallRu();
             } else {
               this.switchToBigRu();
+            }
+          }
+        }
+        if (this.data.find((item) => item.name === e.code).value === 'Ctrl') {
+          this.isCtrlOn = false;
+          if (this.isAltOn) {
+            this.changeLanguage();
+          }
+        }
+        if (this.data.find((item) => item.name === e.code).value === 'Alt') {
+          this.isAltOn = false;
+          if (this.isCtrlOn) {
+            this.changeLanguage();
+          }
+        }
+        if (
+          this.data.find((item) => item.name === e.code).value === 'CapsLock'
+        ) {
+          this.isCapsOn = !this.isCapsOn;
+          if (this.isEnglishON) {
+            if (this.isCapsOn) {
+              this.switchToBigEn();
+            } else {
+              this.switchToSmallEn();
+            }
+          } else {
+            if (this.isCapsOn) {
+              this.switchToBigRu();
+            } else {
+              this.switchToSmallRu();
             }
           }
         }
